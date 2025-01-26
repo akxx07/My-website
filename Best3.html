@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to TK GAMING WEBSITE</title>
+  <style>
+    /* Make sure the body and html take up the full height */
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f4f4f4;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: yellow;
+      color: blue;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      padding: 20px;
+      background-color: pink; /* Background color for the main content */
+      flex: 1; /* This makes the main content take up the available space */
+    }
+
+    section {
+      margin-bottom: 30px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    h2 {
+      cursor: pointer;
+      background: red; /* Red background for section headings */
+      color: white; /* White text color for section headings */
+      padding: 10px;
+      margin: 0;
+    }
+
+    .content {
+      padding: 10px;
+      display: none;
+    }
+
+    footer {
+      background: black; /* Black background for footer */
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      margin-top: auto; /* This will push the footer to the bottom */
+    }
+
+    .game-list, .app-list {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .game-list li, .app-list li {
+      margin: 10px 0;
+    }
+
+    .game-list a, .app-list a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+
+    .game-list a:hover, .app-list a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Welcome to TK GAMING WEBSITE</h1>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Games Section -->
+    <section id="games-section">
+      <h2 onclick="toggleContent('games')">Games Section</h2>
+      <div id="games" class="content">
+        <ul class="game-list">
+          <li><a href="https://dupload.net/5cwxqa8xnweg" target="_blank">Real Cricket 25 Download</a></li>
+          <li><a href="https://gc5-squad-manager.en.uptodown.com/android" target="_blank">Game Changer 5 Download</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Apps Section -->
+    <section id="apps-section">
+      <h2 onclick="toggleContent('apps')">Apps Section</h2>
+      <div id="apps" class="content">
+        <ul class="app-list">
+          <li><a href="https://cricfy.net/" target="_blank">Cricfy App Download</a></li>
+          <li><a href="https://brave-software-brave.en.uptodown.com/android" target="_blank">Brave App Download</a></li>
+          <li><a href="https://capcutmodapk.id/" target="_blank">CapCut New Version Download</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 TK GAMING. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleContent(section) {
+      var content = document.getElementById(section);
+      if (content.style.display === "none") {
+        content.style.display = "block";
+      } else {
+        content.style.display = "none";
+      }
+    }
+
+    // Optionally, to make sure sections are initially collapsed
+    document.getElementById('games').style.display = "none";
+    document.getElementById('apps').style.display = "none";
+  </script>
+
+</body>
+</html>
